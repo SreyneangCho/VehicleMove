@@ -38,8 +38,10 @@ public class vehicle {
 
 	int x;
 	int y;
-
 	
+	/**
+	 * Launch the application.
+	 */
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
@@ -53,12 +55,16 @@ public class vehicle {
 		});
 	}
 
-
+	/**
+	 * Create the application.
+	 */
 	public vehicle() {
 		initialize();
 	}
 
-	
+	/**
+	 * Initialize the contents of the frame.
+	 */
 	private void initialize() {
 		frmVehicle = new JFrame();
 		frmVehicle.getContentPane().addMouseMotionListener(new MouseMotionAdapter() {
